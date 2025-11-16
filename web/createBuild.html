@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style = "background-image: url('images/create.jpg');">
+        <div class="panel">
+            <h2>Create Your Own Build</h2> <br>
+        <form action="createBuildServer.jsp" method="POST">
+            Name <input type="text" name="name" required><br><br>
+            Civilization <input type="text" name="civ" required><br><br>
+            Steps (one per line)
+            <textarea name="steps" rows="5" cols="50" required></textarea><br>
+            <input type="submit" value="Create Build">
+        </form>
+        <a href="dashboard.html">Back to Dashboard</a>
+        </div>
+    </body>
+</html>

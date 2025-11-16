@@ -1,0 +1,90 @@
+/* General page setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: gold; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    background-size: cover;
+    }
+
+/* Reusable panel */
+.panel {
+    background: rgba(20, 20, 20, 0.65);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: gold;
+    width: 400px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+/* Bigger headings */
+h1, h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 1.2em;
+    display: block;
+    margin: 10px 0 5px;
+    color: gold;
+}
+
+/* Inputs & textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid gold;
+    color: gold;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    background: #800000; /* maroon */
+    border: 2px solid gold;
+    color: gold;
+    cursor: pointer;
+    margin: 8px 0;
+    transition: background-color 0.2s ease-in-out;
+}
+button:hover, input[type="submit"]:hover {
+    background: #9b2b2b; /* lighter maroon */
+    color: gold;
+    border: 2px solid gold;
+}
+
+/* Links */
+a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
